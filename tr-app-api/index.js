@@ -2,13 +2,14 @@ import express from 'express'
 import { Router } from 'express';
 import sql from 'mssql';
 import dotenv from 'dotenv';
+import cors from 'cors';
 
 dotenv.config();
 
 const config = {
     server  : "dta-eun-ndev-sqlserver-cnhfse-01.database.windows.net",
-    user: process.env.USERNAME,
-    password: process.env.PASSWORD,
+    user: process.env.DBUSERNAME,
+    password: process.env.DBPASSWORD,
     database: "dta_eun_ndev_sdb_cnhfse_01",
     port: 1433,
     options: { 
@@ -21,6 +22,9 @@ const productRouter = new Router();
 const userRouter = new Router();
 const rankingRouter = new Router();
 
+app.use(cors({
+   origin: "*"
+}));
 app.use(express.json())
 app.use('/products', productRouter);
 app.use('/user', userRouter);
