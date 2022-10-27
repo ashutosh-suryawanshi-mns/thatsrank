@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="header">
+            Create your account
+        </div>
+    </div>
+</div>
+
+<div class="mt-5">
+    <h2>Hi there!</h2>
+    <h2>Let's get started</h2>
+</div>
+
+<form name="form" #f="ngForm" autocomplete="off">
+    <div class="my-4">
+
+        <div class="form-container">
+            <mat-form-field appearance="fill">
+                <input matInput placeholder="Email address"
+                [(ngModel)]="user!.email"
+                name="examTypeName" #examTypeName="ngModel" required>
+                <mat-error *ngIf="true"></mat-error>
+            </mat-form-field>
+        </div>
+        <div class="form-container">
+            <mat-form-field appearance="fill">
+                <input type="password" matInput placeholder="Password"
+                [(ngModel)]="user!.userPassword"
+                name="userPassword" #userPassword="ngModel" required>
+                <mat-error *ngIf="true"></mat-error>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            By creating your account ypu'll automatically be signed up to rate the range, a Marks and Spencer's game
+            app.
+        </div>
+    </div>
+</form>
+
+<div class="form-container m-4">
+    <button class="btn-filled" (click)="saveUser()" [disabled]="f.form.invalid">Create</button>
+</div>

@@ -1,0 +1,5 @@
+<div class="container-fluid">
+  <tr-page-header *ngIf="(routPath != '/signup') && routPath !== '/home' && routPath !== '/' && routPath !== '/login'"></tr-page-header>
+  <router-outlet></router-outlet>
+  <tr-bottom-nav *ngIf="(routPath != '/signup') && routPath !== '/home' && routPath !== '/' && routPath !== '/login'"></tr-bottom-nav>
+</div>

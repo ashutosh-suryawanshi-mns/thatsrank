@@ -1,0 +1,108 @@
+/* You can add global styles to this file, and also import other style files */
+
+// @import '~bootstrap/dist/css/bootstrap.css';
+
+@import 'styles/tr-fonts.scss';
+
+.font-16 {
+    font-size: 16px;
+}
+.font-20 {
+    font-size: 20px;
+}
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+.tr-display-flex{
+    display: flex !important;
+}
+
+.tr-justify-content-space-evenly{
+    justify-content: space-evenly !important;
+}
+
+.tr-flex-flow-column{
+    flex-flow: column;
+}
+
+.tr-align-items-center{
+    align-items: center;
+}
+
+.tr-main-content{
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.border-top-lightgray{
+    border-top: 1px solid lightgray;
+}
+
+.border-bottom-lightgray{
+    border-bottom: 1px solid lightgray;
+}
+
+.no-padding{
+    padding: 0 !important;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.nav-link{
+    color: #CCCCCC !important;
+}
+
+.nav-link.nav-link-active
+{
+    color: black !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.btn-filled {
+    border: none;
+    width: 10rem;
+    height: 42px;
+    background-color: #061B3A;
+    color: white;
+    border-radius: 4px;
+}
+.btn-filled {
+    border: none;
+    width: 10rem;
+    height: 42px;
+    background-color: #061B3A;
+    color: white;
+    border-radius: 4px;
+}
+.btn-filled:disabled {
+
+    background-color: #A29F9F;
+    color: white;
+
+}
+
+.btn-normal {
+   // border: none;
+    width: 10rem;
+    height: 42px;
+    border: 1px solid #061B3A;
+    background-color: white;
+    border-radius: 4px;
+}
+
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-container > * {
+    width: 100%;
+  }

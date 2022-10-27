@@ -1,0 +1,22 @@
+.header {
+    display: flex;
+    align-content: space-around;
+    justify-content: center;
+    align-items: center;
+   // flex-direction: column;
+   // align-items: flex-start;
+    padding: 0px;
+
+    // position: absolute;
+    //width: 375px;
+    height: 56px;
+    // left: 20px;
+    // top: 1424px;
+
+    /* Colour/Primary/White */
+
+    background: #ffffff;
+    /* Colour/Achromatic/Light Grey */
+
+    border-bottom: 1px solid #cccccc;
+}

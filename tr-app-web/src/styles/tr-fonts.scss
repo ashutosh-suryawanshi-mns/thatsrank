@@ -1,0 +1,94 @@
+// Font families
+@font-face {
+    font-family: "MSLondoneTextW04-Semibold";
+    src: url("./../assets/fonts/MSLondoneTextW04-Semibold.eot?#iefix");
+    src: url("./../assets/fonts/MSLondoneTextW04-Semibold.eot?#iefix") format("eot"),
+        url("./../assets/fonts/MSLondoneTextW04-Semibold.woff2") format("woff2"),
+        url("./../assets/fonts/MSLondoneTextW04-Semibold.woff") format("woff"),
+        url("./../assets/fonts/MSLondoneTextW04-Semibold.ttf") format("truetype"),
+        url("./../assets/fonts/MSLondoneTextW04-Semibold.svg#f39b37b2-0415-4b4e-9b24-4c2f5153aa1f") format("svg");
+}
+@font-face {
+    font-family: "MSLondoneTextW04-Condensed";
+    src: url("./../assets/fonts/MSLondoneTextW04-Condensed.eot?#iefix");
+    src: url("./../assets/fonts/MSLondoneTextW04-Condensed.eot?#iefix") format("eot"),
+        url("./../assets/fonts/MSLondoneTextW04-Condensed.woff2") format("woff2"),
+        url("./../assets/fonts/MSLondoneTextW04-Condensed.woff") format("woff"),
+        url("./../assets/fonts/MSLondoneTextW04-Condensed.ttf") format("truetype"),
+        url("./../assets/fonts/MSLondoneTextW04-Condensed.svg#3de0803c-b63d-47a9-8237-8f59fc973f01") format("svg");
+}
+@font-face {
+    font-family: "MSLondoneTextW04-Regular";
+    src: url("./../assets/fonts/MSLondoneTextW04-Regular.eot?#iefix");
+    src: url("./../assets/fonts/MSLondoneTextW04-Regular.eot?#iefix") format("eot"),
+        url("./../assets/fonts/MSLondoneTextW04-Regular.woff2") format("woff2"),
+        url("./../assets/fonts/MSLondoneTextW04-Regular.woff") format("woff"),
+        url("./../assets/fonts/MSLondoneTextW04-Regular.ttf") format("truetype"),
+        url("./../assets/fonts/MSLondoneTextW04-Regular.svg#8871032d-8ae6-47c2-98d5-64d6bef82ae5") format("svg");
+}
+@font-face {
+    font-family: "MSLondoneTextW04-Demibold";
+    src: url("./../assets/fonts/MSLondoneTextW04-Demibold.eot?#iefix");
+    src: url("./../assets/fonts/MSLondoneTextW04-Demibold.eot?#iefix") format("eot"),
+        url("./../assets/fonts/MSLondoneTextW04-Demibold.woff2") format("woff2"),
+        url("./../assets/fonts/MSLondoneTextW04-Demibold.woff") format("woff"),
+        url("./../assets/fonts/MSLondoneTextW04-Demibold.ttf") format("truetype"),
+        url("./../assets/fonts/MSLondoneTextW04-Demibold.svg#13458947-0d97-41b8-a972-3188754fafc8") format("svg");
+}
+
+// Font types
+.tr-font-regular {
+    font-family: "MSLondoneTextW04-Regular" !important;
+}
+.tr-font-condensed {
+    font-family: "MSLondoneTextW04-Condensed" !important;
+}
+.tr-font-semibold {
+    font-family: "MSLondoneTextW04-Semibold" !important;
+}
+.tr-font-demibold {
+    font-family: "MSLondoneTextW04-Demibold" !important;
+}
+
+// Font weights
+.tr-font-bold {
+    font-weight: bold !important;
+}
+
+// Font sizes
+.tr-font-40p {
+    font-size: 40px !important;
+}
+.tr-font-xxxlg {
+    font-size: 30px !important;
+}
+.tr-font-xxlg {
+    font-size: 28px !important;
+}
+.tr-font-xlg {
+    font-size: 26px !important;
+}
+.tr-font-lg {
+    font-size: 24px !important;
+}
+.tr-font-md {
+    font-size: 22px !important;
+}
+.tr-font-sm {
+    font-size: 20px !important;
+}
+.tr-font-xsm {
+    font-size: 18px !important;
+}
+.tr-font-xxsm {
+    font-size: 16px !important;
+}
+.tr-font-14 {
+    font-size: 14px !important;
+}
+.tr-font-12 {
+    font-size: 12px !important;
+}
+.tr-font-10 {
+    font-size: 10px !important;
+}

@@ -1,0 +1,77 @@
+.prd-img {
+    height: 300px;
+}
+
+.prd-title {
+    text-align: center;
+    font-size: 1.5rem;
+    //margin-top: 1rem;
+}
+
+.prd-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ngb-rating {
+    font-size: 3.5rem;
+    color: #eac400;
+}
+
+.count-container {
+    width: 90px;
+    height: 30px;
+    background-color: rgba(87, 77, 147, 0.3);
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(87, 77, 147, 0.6), 0 8px 28px rgba(87, 77, 147, 0.6);
+}
+
+.count-more-50-bg {
+    background: rgba(157, 207, 167, 1) !important;
+}
+.icon-more-50-bg {
+    background: rgba(68, 100, 75, 1) !important;
+}
+
+.hanger-icon {
+    background-color: #574d93;
+    padding: 0 6px;
+    height: 100%;
+    border-radius: 4px;
+}
+
+/////// Modal
+.modal-header {
+    padding: 0 12px;
+    border-bottom: none;
+}
+
+.modal-header .count-container {
+ box-shadow: none;
+ font-size: 1.1rem;
+}
+
+
+.modal-header button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.modal-body {
+    font-size: 1.2rem;
+}
+
+.modal-dialog {
+    top: 38% !important;
+}
+
+.modal-content {
+    border-radius: 0 !important;
+}

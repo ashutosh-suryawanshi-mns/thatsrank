@@ -1,0 +1,146 @@
+<div *ngIf="productDetails.length > 0">
+
+    <div class="tr-font-demibold">
+        <div style="padding-top: 42px;">
+            <div class="count-container d-flex my-3 mx-2" [class.count-more-50-bg]="prdIndx > 50">
+                <div class="hanger-icon" [class.icon-more-50-bg]="prdIndx > 50">
+                    <img src="assets/img/play-game/hanger-2.svg" alt="game">
+                </div>
+                <span *ngIf="prdIndx < 50" class="count" style="padding-right: 6px;">{{prdIndx}}/50</span>
+                <span *ngIf="prdIndx == 50" class="count" style="padding-right: 6px;">{{prdIndx}}</span>
+            </div>
+        </div>
+        <div class="tr-main-content">
+            <div>
+                <img class="prd-img" [src]="productDetails[prdIndx].IMAGE_URL" alt="IMAGE_URL">
+            </div>
+            <div class="prd-container">
+                <div class="prd-title fw-semibold">
+                    {{productDetails[prdIndx].DESCRIPTION}}
+                </div>
+            </div>
+            <div>
+                <div class="d-flex justify-content-around align-items-center">
+                    <ngb-rating (rateChange)="rateChange($event)" [max]="5" [(rate)]="starRating" [readonly]="false">
+                    </ngb-rating>
+                </div>
+            </div>
+            <div>
+                <span *ngIf="starRating == 0">Please rate this product</span>
+                <span *ngIf="starRating != 0">Great!</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- welcome modal -->
+    <ng-container *ngIf="showWelcomModal">
+        <div id="myModal" class="modal d-block" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="myModalLabel">
+                            <div>
+                                <div class="count-container d-flex my-3 mx-2">
+                                    <div class="hanger-icon">
+                                        <img src="assets/img/play-game/hanger-2.svg" alt="game">
+                                    </div>
+                                    <span class="count fw- tr-font-demibold" style="padding-right: 6px;">0/50</span>
+                                </div>
+                            </div>
+                        </h3>
+                        <button type="button" (click)="showWelcomModal = false" class="close" data-dismiss="modal"
+                            aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body tr-font-demibold">
+                        <p>You need to rate atleast 50 in order to qualify for the prize.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- Hooray -->
+    <ng-container *ngIf="showHoorayModal">
+        <div id="myModal" class="modal d-block" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="myModalLabel">
+                            <div>
+                                <div class=" d-flex my-3 mx-2">
+                                    <div>
+                                        <img src="assets/img/play-game/hooray.svg" alt="hooray">
+                                    </div>
+                                    <h3 class=" " style="padding-left: 10px; font-size: 32px;">Hooray</h3>
+                                </div>
+                            </div>
+                        </h3>
+                        <button type="button" (click)="showHoorayModal = false" class="close" data-dismiss="modal"
+                            aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>You're just reached your monthly target so you are now entered in the competition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- Well Done -->
+    <ng-container *ngIf="showWellDoneModal">
+        <div id="myModal" class="modal d-block" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="myModalLabel">
+                            <div>
+                                <div class=" d-flex my-3 mx-2">
+                                    <div>
+                                        <img src="assets/img/play-game/star.svg" alt="hooray">
+                                    </div>
+                                    <h3 class=" " style="padding-left: 10px; font-size: 32px;">Well done!</h3>
+                                </div>
+                            </div>
+                        </h3>
+                        <button type="button" (click)="showWellDoneModal = false" class="close" data-dismiss="modal"
+                            aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <p> So far you're today's top rater.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+    <!-- 100 Completed -->
+    <ng-container *ngIf="show100Modal">
+        <div id="myModal" class="modal d-block" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="myModalLabel">
+                            <div>
+                                <div class=" d-flex my-3 mx-2">
+                                    <div>
+                                        <img src="assets/img/play-game/100.svg" alt="hooray">
+                                    </div>
+                                    <h3 class=" " style="padding-left: 10px; font-size: 32px;">Awesome!</h3>
+                                </div>
+                            </div>
+                        </h3>
+                        <button type="button" (click)="show100Modal = false" class="close" data-dismiss="modal"
+                            aria-hidden="true">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <p> You've just rated your 100th product.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>

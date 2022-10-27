@@ -1,0 +1,25 @@
+<div>
+    <h1>Leaderboard</h1>
+</div>
+
+<div class="m-4" style="background: #E2F1E5;
+border-radius: 30px;
+height: 36px;
+padding: 6px;
+text-align: center;">
+    October
+</div>
+
+<div style="height: calc(100vh - 130px);
+overflow: scroll;">
+    <div>
+        <table style="width: 100%; text-align: center;">
+            <tr *ngFor="let data of leaderboardList; let i = index" [class.myrank]="i==2">
+                <!-- <div class="d-flex m-2" [class.myrank]="i==1" style="justify-content: space-around;"> -->
+                <td>{{i}}</td>
+                <td>{{data.userName}}</td>
+                <td>{{data.rank}}</td>
+                <!-- </div> -->
+        </table>
+    </div>
+</div>
