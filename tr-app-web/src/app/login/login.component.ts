@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'tr-login',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
 
   user:  any = {};
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
 
@@ -16,7 +17,7 @@ export class LoginComponent implements OnInit {
   }
 
   loginUser(){
-
+    this.router.navigate(["play-game"]);
   }
 
 }

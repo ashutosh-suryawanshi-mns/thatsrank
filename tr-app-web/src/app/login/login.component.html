@@ -7,8 +7,7 @@
 </div>
 
 <div class="mt-5">
-    <h2>Hi there!</h2>
-    <h2>Let's get started</h2>
+    <h2>Login</h2>
 </div>
 
 <form name="form" #f="ngForm" autocomplete="off">
@@ -16,7 +15,7 @@
 
         <div class="form-container">
             <mat-form-field appearance="fill">
-                <input matInput placeholder="Email address"
+                <input matInput placeholder="Email address" type="email"
                 [(ngModel)]="user!.email"
                 name="examTypeName" #examTypeName="ngModel" required>
                 <mat-error *ngIf="true"></mat-error>

@@ -11,7 +11,11 @@ export class GameComponent implements OnInit {
   selectedBUs: string[] = ["womenswear","menswear"];
   constructor(private router: Router) { }
 
+  decodedUserData;
+  username;
+
   ngOnInit(): void {
+    this.decodedUserData = JSON.parse(localStorage.getItem("user"));
     if(localStorage.getItem("selectedBUs")){
       let sbus =  localStorage.getItem("selectedBUs");
       this.selectedBUs = JSON.parse(sbus)
